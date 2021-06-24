@@ -22,6 +22,4 @@ services:
   app:
     build:
         context: ./app
-    volumes:
-        - ../app:/home/app
-
+        
