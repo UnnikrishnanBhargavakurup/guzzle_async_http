@@ -18,4 +18,5 @@ for($i = 1; $i <= 10; $i++) {
 
 \GuzzleHttp\Promise\all($promises)->wait();
 
-print "Total time take to complete 10 requet with total deplay of 55 seconds" . time() - $start;
+print "Total time take to complete 10 HTTP requets with a total delay of 55 seconds is : ";
+print  (time() - $start) . " seconds". PHP_EOL;
