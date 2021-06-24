@@ -18,4 +18,4 @@ for($i = 1; $i <= 10; $i++) {
 
 \GuzzleHttp\Promise\all($promises)->wait();
 
-print "Total time take to complete 10 requet " . time() - $start;
+print "Total time take to complete 10 requet with total deplay of 55 seconds" . time() - $start;

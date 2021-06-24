@@ -22,7 +22,6 @@ for($i = 1; $i <= 10; $i++) {
 ```
 # Installaction
 * ```composer install```
-* copy ``index.php`` to web root
 # Running the script
 ```php asyn_req.php```
 # Result
