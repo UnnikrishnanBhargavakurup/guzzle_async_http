@@ -1,0 +1,27 @@
+version: "2"
+services:
+
+  php-server:
+    build: .docker/php
+    expose:
+      - "9000"
+    container_name: php_server
+    volumes:
+      - ./:/var/www/html
+  nginx-server:
+    build: .docker/nginx
+    ports:
+      - "8080:80"
+    container_name: nginx_server
+    volumes:
+      - ./:/var/www/html
+    depends_on:
+      - php-server
+
+  composer-engine:
+    restart: 'no'
+    image: composer
+    command:  install  --working-dir=/var/www/html  --optimize-autoloader --prefer-dist
+
+    volumes_from:
+      - php-server
