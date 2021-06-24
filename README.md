@@ -21,6 +21,8 @@ for($i = 1; $i <= 10; $i++) {
 \GuzzleHttp\Promise\all($promises)->wait();
 ```
 # Installaction
+* ``` cd docker ```
+* ``` docker compose up ```
 * ```composer install```
 # Running the script
 ```php asyn_req.php```
