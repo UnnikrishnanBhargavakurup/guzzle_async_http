@@ -48,5 +48,5 @@ response :  1 : {"sleep":"10 seconds"}
 response :  8 : {"sleep":"3 seconds"}
 response :  7 : {"sleep":"4 seconds"}
 response :  4 : {"sleep":"7 seconds"}
-Total time take to complete 10 HTTP requet with a total deplay of 55 seconds is : 14 seconds
+Total time take to complete 10 HTTP requests with a total delay of 55 seconds is : 14 seconds
 ```
